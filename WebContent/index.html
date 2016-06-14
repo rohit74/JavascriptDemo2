@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	.hidden{
+		visibility: hidden;
+		display: none;
+}
+	.show{
+		visibility: visible;
+		display: block;
+		}
+
+</style>
+ <script src="js/script.js"></script> 
+
+ <script src="js/form.js"></script> 
+
+</head>
+<body>
+	<form action="" name="form1" id="form1">
+	Account No: <input type ="text" name="accNo" id="accNo"/>
+	<br/><br/>
+		<input type ="button" value="Submit" onclick="checkAccountNo"/>
+	</form>
+</body>
+<script type="text/javascript">
+doDateManipulations(); 
+/*doStringManipulations();*/
+ */
+ /*
+function doDateManipulations(){
+	var today = new Date();
+	document.write(today);
+}*/
+/*functon doStringManipulations(){
+	var str1 = "Javascript"; //literal string
+	var str2 = new String("Javascript");
+	document.write(str1.substr(2,4));
+	document.write("");
+	document.write(str1.substring(2,4));
+}*/
+/*
+doArrayManipulations();
+function doArrayManipulations(){
+	var arr = new Array(1,2,3,4); //using new
+	var arr1 = [10,"kushal",20,"giri"]; //dense
+	var newArray = arr.concat(arr1);
+	var arr2 = ["kusal", "binay", "giri", "sagun"];
+	var str = arr2.join(":");
+	document.write(str);
+	document.write(newArray);
+	document. write(arr2.pop());
+	document.write(" ");
+	document.write(arr2);
+}
+*/
+</script>
+
+</head>
+<body>
+	<body onload = "showDetails();">
+	<div id ="header">
+		<input type="button" value ="Open" onclick="history1();"/>
+	</div>
+	<div id = "content">
+		<a href="form.html">Register</a>
+	</div>
+	<div id ="footer">
+	</div>
+</body>
+</body>
+</html>

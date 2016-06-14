@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script src = "js/script.js"></script>
+<script src = "js/form.js">
+</script>
+<style type="text/css">
+	#container {
+		width : 80%;
+		border : 1px solid black;
+		margin-left : 146px;
+		height : 650px;
+	}
+	#header {
+		height: 20%;
+		border-bottom : 1px dotted black;
+	}
+	
+	#content {
+		height:70%;
+		border-bottom : 1px dotted black;
+	}
+	#footer {
+		height:10%;
+	}
+	.hidden {
+		visibility: hidden;
+		display: none;
+	}
+	
+	.show {
+		visibility: visible;
+		display: block;
+	}
+	.changedDiv {
+		background-color: yellow;
+	}
+</style>
+</head>
+<body>
+	<form action="" method = "GET" name = "form1" id = "form1">
+		First Name :<input type = "text" name = "firstName" id = "firstName"><br/><br/>
+		
+		Last Name :<input type = "text" name = "lastName" id = "lastName"><br/><br/>
+		
+		Age :<input type = "text" name = "name" id = "age"><br/><br/>
+		
+		Gender : <input type="radio" value="Male" name="rad" id = "male"> Male
+		<input type="radio" value="Female" name="rad" id = "female"> Female<br/><br/>
+		
+		Hobbies : <input type = "checkbox" id = "hobbies" name = "hobbies" value="Reading">Reading
+		<input type = "checkbox" id = "hobbies" name = "hobbies" value="Gaming">Gaming
+		<input type = "checkbox" id = "hobbies" name = "hobbies" value="Travelling">Travelling<br/><br/>
+		
+		Country : <select id = "country" name = "country" multiple="multiple">
+					<option value = "IN">INDIA</option>
+					<option value="NE">NEPAL</option>
+					<option value="US">United States</option>
+				  </select><br/><br/>
+				  
+		<input type="button" value="Click" id = "button" onclick="validateForm();">
+		<input type="button" value="Clear Fields" id = "clear" onclick="clearFields();">
+		
+	</form>
+	<div id = "errorDiv" class = "hidden"></div>
+</body>
+</html>
+
